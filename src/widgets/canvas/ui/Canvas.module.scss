@@ -1,0 +1,15 @@
+@use "@/mixins";
+@use "@/variables";
+
+.canvas {
+  position: absolute;
+  top: #{variables.$toolbarHeight * 2};
+  width: 100%;
+  height: calc(100vh - #{variables.$toolbarHeight * 2});
+  background-color: variables.$barBgColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 50px;
+}

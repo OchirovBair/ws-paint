@@ -1,4 +1,4 @@
-import { SettingsBar, Toolbar } from "@/widgets";
+import { Canvas, SettingsBar, Toolbar } from "@/widgets";
 import "./App.scss";
 
 export function App() {
@@ -6,6 +6,7 @@ export function App() {
     <div className={"app"}>
       <Toolbar />
       <SettingsBar />
+      <Canvas />
     </div>
   );
 }
