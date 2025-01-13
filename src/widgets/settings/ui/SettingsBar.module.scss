@@ -1,0 +1,17 @@
+@use "@/mixins";
+@use "@/variables";
+
+.settings {
+  @include mixins.bar;
+  justify-content: start;
+  align-items: center;
+  top: variables.$toolbarHeight;
+}
+
+.lineWidth {
+  display: flex;
+  gap: 10px;
+  input {
+    width: 50px;
+  }
+}

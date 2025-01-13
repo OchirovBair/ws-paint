@@ -1,0 +1,11 @@
+@use "variables";
+
+@mixin bar {
+  height: variables.$toolbarHeight;
+  background-color: variables.$barBgColor;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 4px 5px gray;
+  padding: 0 10px;
+}

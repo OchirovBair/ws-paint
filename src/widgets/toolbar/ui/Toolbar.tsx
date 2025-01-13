@@ -34,6 +34,7 @@ export const Toolbar = () => {
             console.log("line");
           }}
         />
+        <input type="color" />
       </div>
       <div>
         <button
