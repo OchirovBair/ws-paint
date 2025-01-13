@@ -1,3 +1,10 @@
+import "./App.scss";
+import { Toolbar } from "@/widgets";
+
 export function App() {
-  return <div>some txt</div>;
+  return (
+    <div className={"app-container"}>
+      <Toolbar />
+    </div>
+  );
 }
