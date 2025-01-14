@@ -1,15 +1,23 @@
 @use "@/mixins";
 @use "@/variables";
 
-.canvas {
+$marginTop: #{variables.$toolbarHeight * 2};
+$canvasContainerHeight: calc(100vh - #{variables.$toolbarHeight * 2});
+
+.canvasContainer {
   position: absolute;
-  top: #{variables.$toolbarHeight * 2};
+  top: $marginTop;
   width: 100%;
-  height: calc(100vh - #{variables.$toolbarHeight * 2});
-  background-color: variables.$barBgColor;
+  height: $canvasContainerHeight;
+  background-color: #8a8a8a;
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
-  font-size: 50px;
+.canvas {
+  width: clamp(calc(100% * 0.8), 80%, 960px);
+  background-color: variables.$barBgColor;
+  height: calc($canvasContainerHeight * 0.8);
+  border: 1px solid black;
 }

@@ -1,5 +1,7 @@
+@use "@/variables";
+
 .app {
-  max-width: 1200px;
+  max-width: variables.$maxMainWidth;
   width: 100%;
   margin: 0 auto;
   position: relative;
